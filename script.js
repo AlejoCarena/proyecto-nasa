@@ -20,7 +20,7 @@ fetch(`${apiUrl}?api_key=${apiKey}`)
   .then(data => {
     // trabajar con los datos recibidos de la API
     console.log(data);
-    containerImg.innerHTML = `<img src="${data.url}" alt="imagen" class="img">`;
+    containerImg.innerHTML = `<img src="${data.hdurl}" alt="imagen" class="img">`;
     description.innerHTML =`<h2>${data.title}</h2>
             <div class="text">
                 <p>${data.explanation}</p>
